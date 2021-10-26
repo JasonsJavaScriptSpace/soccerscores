@@ -1,0 +1,72 @@
+{
+  "name": "offline-coding-challenge",
+  "author": "Jason Poteet <JasonRPoteet+soccerscores@gmail.com>",
+  "version": "1.0.0",
+  "description": "Command-line application that reads a listing of game results for a soccer league as a stream and returns the top teams at the end of each matchday.",
+  "main": "./src/main.js",
+  "bin": {
+    "soccerscores": "./src/main.js"
+  },
+  "private": true,
+  "type": "module",
+  "homepage": "https://github.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "engines": {
+    "node": ">=16.0.0 <17",
+    "npm": ">=7.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testRegex": "((\\.|/*.)(spec))\\.js?$",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageThreshold": {
+      "global": {
+          "branches": 90,
+          "functions": 90,
+          "lines": 90,
+          "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "instructions",
+      "main.js",
+      "soccerscores.js",
+      "index.js"
+    ],
+    "verbose": false
+  },
+  "scripts": {
+    "build": "npm install -g",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1"
+  }
+}
