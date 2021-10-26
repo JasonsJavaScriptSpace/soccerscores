@@ -2,11 +2,11 @@ Jason Poteet: Soccer Scores CLI application
 ===========================================
 
 <!-- table of contents -->
-* [Description](#-description)
-* [System Requirements](#-systemrequirements)
-* [Usage](#-usage)
-* [Testing](#-testing)
-* [Feedback](#-feedback)
+* [Description](#description)
+* [System Requirements](#system-requirements)
+* [Usage](#usage)
+* [Testing](#testing)
+* [Feedback](#feedback)
 <!-- table of contents end -->
 
 <!-- content body start -->
